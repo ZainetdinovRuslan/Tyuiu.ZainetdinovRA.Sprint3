@@ -5,12 +5,12 @@ namespace Tyuiu.ZainetdinovRA.Sprint3.Task0.V8.Lib
     {
         public double GetMultiplySeries(double value, int startValue, int stopValue)
         {
-            double sumSeries = 0;
+            double sumSeries = 1;
             for (int i = startValue; i <= stopValue; i++)
             {
-                sumSeries += (Math.Pow(value, i) + 1) * Math.Cos(4);
+                sumSeries *= (Math.Pow(value, i) + 1) * Math.Cos(4);
             }
-            return sumSeries;
+            return Math.Round(sumSeries, 3);
         }
     }
 }
