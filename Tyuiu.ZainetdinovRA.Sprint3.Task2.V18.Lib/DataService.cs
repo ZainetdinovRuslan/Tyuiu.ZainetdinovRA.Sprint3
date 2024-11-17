@@ -7,9 +7,9 @@ namespace Tyuiu.ZainetdinovRA.Sprint3.Task2.V18.Lib
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
             double sumSeries = 1;
-            int i = startValue;
+            double i = startValue;
             do
-            {
+            {                
                 sumSeries *= Math.Cos(value) + Math.Pow(i / 8, 3);
                 i++;
             }
